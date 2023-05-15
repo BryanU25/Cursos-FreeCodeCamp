@@ -1,7 +1,11 @@
 eh=input("Ingresa Horas De Trabajo: ")
 ep=input("Ingresa Pago Por Horas: ")
-fh=float(eh)
-fp=float(ep)
+try:
+    fh=float(eh)
+    fp=float(ep)
+except:
+    print ("Error, ingresa una entrada numerica")
+    quit()
 
 if fh>40.0:
     print("Tiempo extra")
